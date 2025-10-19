@@ -1,0 +1,139 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ismail Kabir — Backend Engineer</title>
+  <meta name="description" content="Portfolio of a backend engineer — APIs, systems design, scalable services, and DevOps.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Ismail Kabir</h1>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <div class="hero-left">
+        <h2>Backend Engineer — building reliable, scalable services</h2>
+        <p class="lead">I design APIs, build resilient microservices, and automate deployments. Experienced with Node.js, Python, databases, and cloud infrastructure.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn outline" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <!-- Simple tech stack summary -->
+        <ul class="stack">
+          <li>REST / GraphQL</li>
+          <li>Node.js / Express</li>
+          <li>Python / FastAPI</li>
+          <li>Postgres / MongoDB</li>
+          <li>Docker • Kubernetes</li>
+          <li>AWS / GCP</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h3>About me</h3>
+      <p>I am a backend engineer with experience designing APIs, implementing authentication and authorization, optimising database queries, and deploying services to production. I enjoy solving performance bottlenecks and turning business requirements into reliable systems.</p>
+      <p>Currently open to collaborations and roles that involve systems design, reliability, and backend architecture.</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h3>Core skills</h3>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Languages & Frameworks</h4>
+          <p>JavaScript (Node.js), Python (Djangp), Go (basic)</p>
+        </div>
+        <div class="skill">
+          <h4>Databases</h4>
+          <p>PostgreSQL, MongoDB, Redis</p>
+        </div>
+        <div class="skill">
+          <h4>Systems</h4>
+          <p>Microservices, Event-driven design, Message queues (RabbitMQ, Kafka)</p>
+        </div>
+        <div class="skill">
+          <h4>DevOps</h4>
+          <p>Docker, Kubernetes, CI/CD, Terraform, cloud (AWS/GCP)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h3>Selected projects</h3>
+      <div class="projects-grid">
+        <article class="project">
+          <h4>Safe — Security Intelligence Platform</h4>
+          <p>Built a system that aggregates reports, runs risk scoring, and provides route safety recommendations. Implemented scalable APIs, a worker queue for processing reports, and an admin dashboard for verified reporters.</p>
+          <p class="meta">Tech: Node.js, PostgreSQL, Redis, Docker, AWS</p>
+          <a class="small-link" href="#contact">See repo / demo</a>
+        </article>
+
+        <article class="project">
+          <h4>Criminal Tracking App (Police)</h4>
+          <p>Designed and developed a secure backend for storing suspect records, fingerprint lookups, and image uploads with role-based access. Focused on audit logging and secure identity checks.</p>
+          <p class="meta">Tech: Python (FastAPI), MongoDB, S3-compatible storage</p>
+          <a class="small-link" href="#contact">See repo / demo</a>
+        </article>
+
+        <article class="project">
+          <h4>Movie Recommendation Service</h4>
+          <p>Created REST endpoints to fetch and cache TMDB data, store user collections, and generate simple recommendations based on genres and user history.</p>
+          <p class="meta">Tech: Node.js, Express, MongoDB, TMDB API</p>
+          <a class="small-link" href="#contact">See repo / demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card contact-card">
+      <h3>Contact</h3>
+      <p>If you want to work together or see more code, reach out:</p>
+      <ul>
+        <li>Email: <a href="mailto:ismail@example.com">ismail@example.com</a></li>
+        <li>LinkedIn: <a href="#">linkedin.com/in/ismail-kabir</a></li>
+        <li>Location: Zaria, Nigeria</li>
+      </ul>
+
+      <form class="contact-form" action="#" method="post" onsubmit="alert('This demo form does not submit. Replace action with your endpoint.'); return false;">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ismail Kabir — Backend Engineer</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script to set the current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
